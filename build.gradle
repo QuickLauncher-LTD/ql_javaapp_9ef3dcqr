@@ -18,8 +18,9 @@ dependencies {
   implementation 'com.github.jitpack:gradle-simple:1.1'
 }
 
-task stage(dependsOn: 'bootJar') {
-}
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
 
 java {
 	withSourcesJar()
