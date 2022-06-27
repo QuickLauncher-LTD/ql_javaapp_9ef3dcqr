@@ -5,6 +5,7 @@ app "javaapp_9ef3dcqr" {
     use "pack" {
       #builder     = "paketobuildpacks/builder:base"
       builder  = "heroku/buildpacks:20"
+      disable_entrypoint = true
     }
     registry {
       use "docker" {
