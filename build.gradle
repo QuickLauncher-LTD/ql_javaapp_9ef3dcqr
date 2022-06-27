@@ -24,5 +24,3 @@ tasks.named('test') {
 tasks.jar {
 	enabled = false
 }
-#task stage(dependsOn: ['build', 'clean'])
-#build.mustRunAfter clean
