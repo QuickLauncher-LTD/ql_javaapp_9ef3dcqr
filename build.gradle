@@ -63,11 +63,12 @@ task wrapper(type: Wrapper) {
 }
 // end::wrapper[]
 
-task stage(type: Copy, dependsOn: [clean, build])
-stage.mustRunAfter(clean)
-
-jar {
-    enabled = false
+tasks.jar {
+	enabled = false
 }
-
+tasks.bootJar {
+	enabled = true
+	archiveClassifier.set("boot")
+	mainClassName = "hello.HelloWorld"
+}
 
