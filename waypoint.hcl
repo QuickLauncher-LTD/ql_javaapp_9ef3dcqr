@@ -4,7 +4,8 @@ app "javaapp_9ef3dcqr" {
   build {
     use "pack" {
       #builder     = "paketobuildpacks/builder:base"
-      builder  = "heroku/buildpacks:20"
+      builder = "gcr.io/buildpacks/builder:v1"
+      #builder  = "heroku/buildpacks:20"
       #disable_entrypoint = true
     }
     registry {
