@@ -12,7 +12,7 @@ public class QlJavaapp9ef3dcqrApplication {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return "LG Uplus Deployment Successfully finished";
     }
 
     public static void main(String[] args) {
