@@ -65,3 +65,9 @@ task wrapper(type: Wrapper) {
 
 task stage(type: Copy, dependsOn: [clean, build])
 stage.mustRunAfter(clean)
+
+jar {
+    enabled = false
+}
+
+
