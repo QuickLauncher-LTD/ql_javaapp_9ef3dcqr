@@ -9,10 +9,13 @@ targetCompatibility = 1.8
 
 repositories {
   mavenCentral()
+  jcenter()
+     maven { url "https://jitpack.io" }
 }
 
 dependencies {
   implementation 'com.google.guava:guava:29.0-jre'
+  implementation 'com.github.jitpack:gradle-simple:1.1'
 }
 
 java {
