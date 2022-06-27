@@ -21,6 +21,9 @@ dependencies {
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
 
+jar {
+    enabled = false
+}
 
 java {
 	withSourcesJar()
