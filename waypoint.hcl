@@ -3,7 +3,7 @@ project = "javaapp_9ef3dcqr"
 app "javaapp_9ef3dcqr" {
   build {
     use "pack" {
-      builder     = "heroku/buildpacks:20"
+      builder     = "paketobuildpacks/builder:base"
     }
     registry {
       use "docker" {
